@@ -1,0 +1,28 @@
+#btnEmployee{
+    -fx-background-color: rgba(120, 23, 84, 0.4);
+}
+#btnBooks{
+    -fx-background-color: rgba(120, 23, 84, 0.6);
+}
+#btnSchoolItem{
+    -fx-background-color: rgba(120, 23, 84, 0.89);
+}
+#btnIncomeReports{
+    -fx-background-color: rgba(120, 23, 84, 0.89);
+}
+#btnOrder{
+    -fx-background-color: rgba(120, 23, 84, 0.6);
+}
+#btnSellingBooks{
+    -fx-background-color: rgba(120, 23, 84, 0.4);
+
+}
+#btnSellingItems{
+    -fx-background-color: rgba(120, 23, 84, 0.4);
+}
+#btnStock{
+    -fx-background-color: rgba(120, 23, 84, 0.6);
+}
+#btnLogOut{
+    -fx-background-color: rgba(120, 23, 84, 0.89);
+}

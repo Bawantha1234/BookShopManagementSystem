@@ -1,0 +1,6 @@
+#ancViewBooks {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-effect: dropshadow(gaussian, rgb(138, 138, 138),20,0.5,0,0);
+}

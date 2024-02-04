@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="799.0" prefWidth="1410.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagementSystem.controller.UserController">
+   <children>
+      <ImageView fitHeight="810.0" fitWidth="1410.0" layoutX="-1.0" layoutY="-1.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/29660.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="100.0" layoutY="14.0" prefHeight="74.0" prefWidth="134.0" text="User " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="71.0" prefHeight="45.0" prefWidth="163.0" text="Dashboard" textFill="#faf6f6">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="52.0" layoutY="115.0" prefWidth="200.0" />
+      <JFXButton fx:id="btnPlaceOrder" layoutX="42.0" layoutY="243.0" onAction="#btnPlaceOrder1OnAction" prefHeight="74.0" prefWidth="200.0" ripplerFill="#f4820794" style="-fx-background-radius: 50;" stylesheets="@../stylesheet/Admin.css" text="     Place Order" textFill="#130000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/checkout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnManageSellingBooks" layoutX="42.0" layoutY="338.0" onAction="#btnManageSellingIBooksOnAction" prefHeight="74.0" prefWidth="200.0" ripplerFill="#f4820794" style="-fx-background-radius: 50;" stylesheets="@../stylesheet/Admin.css" text="Manage Selling Books" textFill="#130000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/sell.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnManageSellingItems" layoutX="42.0" layoutY="432.0" onAction="#btnManageSellingItems1OnAction" prefHeight="74.0" prefWidth="200.0" ripplerFill="#f4820794" style="-fx-background-radius: 50;" stylesheets="@../stylesheet/Admin.css" text="Manage Selling Items" textFill="#130000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/cheque.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnManageStock" layoutX="42.0" layoutY="522.0" onAction="#btnManageStock1OnAction" prefHeight="74.0" prefWidth="200.0" ripplerFill="#f4820794" style="-fx-background-radius: 50;" stylesheets="@../stylesheet/Admin.css" text="   Manage Stock" textFill="#130000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/inventory.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnLogout" layoutX="42.0" layoutY="615.0" onAction="#btnLogout1OnAction" prefHeight="74.0" prefWidth="200.0" ripplerFill="#f4820794" style="-fx-background-radius: 50;" stylesheets="@../stylesheet/Admin.css" text="Logout" textFill="#130000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane fx:id="ancUserContext" layoutX="302.0" layoutY="95.0" prefHeight="711.0" prefWidth="1106.0" />
+      <JFXButton fx:id="btnAddCustomer" layoutX="42.0" layoutY="152.0" onAction="#AddCustomerOnAction" prefHeight="74.0" prefWidth="200.0" ripplerFill="#f4820794" style="-fx-background-radius: 50;" stylesheets="@../stylesheet/Admin.css" text="Add Customer" textFill="#130000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/add-user%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

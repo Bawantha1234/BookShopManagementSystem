@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancItemDetails" prefHeight="711.0" prefWidth="1106.0" stylesheets="@../stylesheet/BookDetails.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagementSystem.controller.UserManageSellingItemsController">
+   <children>
+      <TableView fx:id="tblItemDetaisl" layoutX="72.0" layoutY="128.0" prefHeight="551.0" prefWidth="978.0">
+         <columns>
+            <TableColumn fx:id="clmId" prefWidth="158.40002059936523" text="ID" />
+            <TableColumn fx:id="clmName" prefWidth="198.40003967285156" text="Name" />
+            <TableColumn fx:id="clmDescription" prefWidth="315.20001220703125" text="Description" />
+            <TableColumn fx:id="clmPrice" prefWidth="149.60003662109375" text="Price" />
+            <TableColumn fx:id="clmQty" prefWidth="156.79986572265625" text="Qty" />
+         </columns>
+      </TableView>
+      <Label layoutX="303.0" layoutY="46.0" prefHeight="52.0" prefWidth="500.0" text="View Available Items Details">
+         <font>
+            <Font name="Tahoma Bold" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

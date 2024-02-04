@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancStockMain" prefHeight="711.0" prefWidth="1106.0" stylesheets="@../stylesheet/Stock.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagementSystem.controller.UserViewStockController">
+   <children>
+      <Label layoutX="43.0" layoutY="250.0" prefHeight="30.0" prefWidth="294.0" text="SELECT A TAG TO CONTINUE...">
+         <font>
+            <Font name="Serif Regular" size="19.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBooks" layoutX="59.0" layoutY="318.0" onAction="#btnBooksOnAction" prefHeight="107.0" prefWidth="261.0" style="-fx-background-color: gray;" text="BOOKS">
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="53.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/books.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="BtnItems" layoutX="59.0" layoutY="459.0" onAction="#BtnItemsOnAction" prefHeight="107.0" prefWidth="262.0" style="-fx-background-color: gray;" text="STATIONARY ITEMS">
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="57.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/stationery.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="108.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/inventory%20(1).png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="ancStock" layoutX="361.0" layoutY="11.0" prefHeight="711.0" prefWidth="756.0" />
+   </children>
+</AnchorPane>

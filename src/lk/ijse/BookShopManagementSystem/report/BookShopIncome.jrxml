@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BookShopIncome" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e193decd-9426-4da5-a77c-d7da45cc3d3e">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="month" class="java.lang.String"/>
+	<field name="income" class="java.lang.String"/>
+	<field name="order_count" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="192" y="0" width="170" height="30" uuid="0b52646c-04fb-4a4d-ab4a-a5236a4a19b4"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Siyapatha Book Shop]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="30" width="170" height="44" uuid="ea556cd0-f40f-48f4-baf7-7549ff9daa15"/>
+				<text><![CDATA[No : 14/B,Taxila Central College Road       Horana]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="0" width="100" height="30" uuid="e738dc6e-db0f-4303-adac-1f0e991f0f37">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8958439-e9b0-449b-a855-f5e100fe37f9"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="0" width="100" height="30" uuid="39eaed90-20fa-4bcb-936c-32ff82d69a05">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5472f38-a5a0-4425-b509-5b17b9aec43e"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[income]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="0" width="132" height="30" uuid="f7d56099-c994-4885-9bb5-a882d992e44b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00f2baee-868f-4e39-82fc-0b8d55bd7924"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Order Count]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="0" width="100" height="30" uuid="926483e6-b60d-436a-af20-b63940cfd99c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8958439-e9b0-449b-a855-f5e100fe37f9"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="0" width="100" height="30" uuid="7d1c52c7-f277-47e8-b463-8f669b769fef">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5472f38-a5a0-4425-b509-5b17b9aec43e"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{income}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="4c77adeb-cf57-4f1e-903d-8b781ad213a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00f2baee-868f-4e39-82fc-0b8d55bd7924"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{order_count}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

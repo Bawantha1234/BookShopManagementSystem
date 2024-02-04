@@ -1,0 +1,40 @@
+#btnManageEmployee{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+    -fx-border-radius: 50px;
+}
+#btnManageBooks{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}
+#btnManageSchoolItems{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}
+#btnManageincomeReports{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}
+#btnPlaceOrder{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}
+#btnManageSellingBooks{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}
+#btnManageSellingItems{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}
+#btnManageStock{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}
+#ancEmployee{
+    -fx-background-color: rgba(120, 23, 84, 0.2);
+}
+#btnLogout {
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}
+#btnManageCustomer{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}
+#ancBooks{
+    -fx-background-color: rgba(120, 23, 84, 0.2);
+}
+#btnAddCustomer{
+    -fx-background-color: rgba(185, 176, 176, 0.8);
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContext" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagementSystem.controller.MainFormController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1406.0" opacity="0.39" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/2303.w061.n005.115B.p1.115.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="325.0" layoutY="230.0" prefHeight="85.0" prefWidth="754.0" text="WELCOME TO LOGIN SYSTEM ">
+         <font>
+            <Font name="Times New Roman Bold" size="49.0" />
+         </font>
+      </Label>
+      <Separator layoutX="315.0" layoutY="303.0" prefHeight="0.0" prefWidth="764.0" />
+      <Label layoutX="484.0" layoutY="335.0" prefHeight="21.0" prefWidth="425.0" text="LOG IN TO ACCESS YOUR ACCOUNT ">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="txtUserName" layoutX="536.0" layoutY="414.0" onAction="#txtUserNameOnAction" prefHeight="35.0" prefWidth="291.0" promptText="USER NAME">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="psdPassword" layoutX="536.0" layoutY="498.0" onAction="#psdPasswordOnAction" prefHeight="35.0" prefWidth="291.0" promptText="PASSWORD">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <JFXButton fx:id="btnLogin" layoutX="634.0" layoutY="608.0" onAction="#btnLoginOnAction" prefHeight="45.0" prefWidth="94.0" stylesheets="@../stylesheet/Mainform.css" text="Login" textFill="WHITE" AnchorPane.bottomAnchor="124.0" AnchorPane.rightAnchor="678.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="219.0" fitWidth="267.0" layoutX="534.0" layoutY="10.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/23788719_6863707-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblLoginText" alignment="TOP_CENTER" layoutX="539.0" layoutY="560.0" prefHeight="13.0" prefWidth="291.0" textAlignment="CENTER" textFill="#ea0707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

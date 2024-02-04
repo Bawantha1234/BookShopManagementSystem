@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancAnnually" prefHeight="711.0" prefWidth="764.0" stylesheets="@../stylesheet/AnnuallyIncome.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagementSystem.controller.IncomeAnnuallyController">
+   <children>
+      <Label layoutX="175.0" layoutY="46.0" prefHeight="54.0" prefWidth="425.0" text="Annually Income Report">
+         <font>
+            <Font name="Times New Roman Bold" size="39.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="chrtIncome" layoutX="75.0" layoutY="126.0" prefHeight="472.0" prefWidth="626.0" title="Date" titleSide="BOTTOM">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <JFXButton fx:id="btnPrintOnAction" layoutX="328.0" layoutY="629.0" onAction="#btnPrintOnAction" prefHeight="41.0" prefWidth="120.0" text="Print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

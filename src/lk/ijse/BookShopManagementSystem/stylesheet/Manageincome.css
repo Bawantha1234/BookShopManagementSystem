@@ -1,0 +1,12 @@
+#ancIncomeContext{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-effect: dropshadow(gaussian, rgb(138, 138, 138),20,0.5,0,0);
+}
+#btnMonthly{
+    -fx-background-color: rgba(225, 214, 12, 0.82);
+}
+#btnAnnually{
+    -fx-background-color: rgba(58, 225, 12, 0.68);
+}

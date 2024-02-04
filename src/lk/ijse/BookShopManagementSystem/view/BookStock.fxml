@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancBookStock" prefHeight="711.0" prefWidth="756.0" stylesheets="@../stylesheet/BookStock.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagementSystem.controller.BookStockController">
+   <children>
+      <TableView fx:id="tblBookStock" layoutX="34.0" layoutY="125.0" prefHeight="563.0" prefWidth="694.0" stylesheets="@../stylesheet/BookStock.css">
+        <columns>
+          <TableColumn fx:id="clmBookId" prefWidth="89.0" text="Book ID" />
+            <TableColumn fx:id="clmCategory" prefWidth="111.0" text="Category" />
+            <TableColumn fx:id="clmName" prefWidth="124.0" text="Name" />
+            <TableColumn fx:id="clmPrice" prefWidth="79.0" text="Price" />
+            <TableColumn fx:id="clmPrice1" prefWidth="92.0" text="Mark Price" />
+            <TableColumn fx:id="clmQuantity" prefWidth="58.0" text="Quantity" />
+            <TableColumn fx:id="clmDescription" prefWidth="140.0" text="Description" />
+        </columns>
+      </TableView>
+      <Label layoutX="270.0" layoutY="43.0" prefHeight="56.0" prefWidth="215.0" text="Book Stock">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

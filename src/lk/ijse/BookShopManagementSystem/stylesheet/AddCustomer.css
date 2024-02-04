@@ -1,0 +1,68 @@
+#txtId{
+    -fx-background-color: transparent;
+    -fx-border-color:#3f3951 ;
+    -fx-border-width: 0px 0px.8px 0px;
+    -fx-font-size: 13px;
+}
+
+
+#txtId:focused{
+    -fx-border-color: linear-gradient(to bottom right,#2f3f89,#9231b5);
+    -fx-border-width: 0px 0px 1.5px 0px;
+}
+#txtName{
+    -fx-background-color: transparent;
+    -fx-border-color:#3f3951 ;
+    -fx-border-width: 0px 0px.8px 0px;
+    -fx-font-size: 13px;
+}
+#txtName:focused{
+    -fx-border-color: linear-gradient(to bottom right,#2f3f89,#9231b5);
+    -fx-border-width: 0px 0px 1.5px 0px;
+}
+
+
+#txtAddress{
+    -fx-background-color: transparent;
+    -fx-border-color:#3f3951 ;
+    -fx-border-width: 0px 0px.8px 0px;
+    -fx-font-size: 13px;
+}
+
+#txtAddress:focused {
+    -fx-border-color: linear-gradient(to bottom right, #2f3f89, #9231b5);
+    -fx-border-width: 0px 0px 1.5px 0px;
+}
+
+#txtContactNumber{
+    -fx-background-color: transparent;
+    -fx-border-color:#3f3951 ;
+    -fx-border-width: 0px 0px.8px 0px;
+    -fx-font-size: 13px;
+}
+#txtContactNumber:focused {
+    -fx-border-color: linear-gradient(to bottom right, #2f3f89, #9231b5);
+    -fx-border-width: 0px 0px 1.5px 0px;
+}
+
+#txtEmail{
+    -fx-background-color: transparent;
+    -fx-border-color:#3f3951 ;
+    -fx-border-width: 0px 0px.8px 0px;
+    -fx-font-size: 13px;
+}
+
+#ancCustomer{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-effect: dropshadow(gaussian, rgb(138, 138, 138),20,0.5,0,0);
+}
+.button{
+    -fx-background-color: #2d7bec;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+}
+.button:hover{
+    -fx-background-color: #b2b2b2;
+}

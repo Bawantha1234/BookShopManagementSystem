@@ -1,0 +1,119 @@
+create table customer
+(
+    id             varchar(45) not null
+        primary key,
+    name           varchar(45) null,
+    address        varchar(45) null,
+    contact_number varchar(45) null,
+    email          varchar(45) null
+);
+
+create table employee
+(
+    id             varchar(45) not null
+        primary key,
+    name           varchar(45) null,
+    address        varchar(45) null,
+    nic            varchar(20) null,
+    contact_number varchar(45) null,
+    salary         double      null
+);
+
+create table item
+(
+    id          varchar(45)            not null
+        primary key,
+    category    varchar(45)            null,
+    name        varchar(45)            null,
+    price       double                 null,
+    markPrice   double                 null,
+    Qty         int                    null,
+    description varchar(45)            null,
+    type        enum ('Book', 'Other') null
+);
+create table item_sales
+(
+    sale_id varchar(45) not null,
+    item_id varchar(45) not null,
+    qty     int         null,
+    primary key (sale_id, item_id),
+    constraint item_sales_ibfk_1
+        foreign key (item_id) references item (id)
+            on update cascade on delete cascade,
+    constraint item_sales_ibfk_2
+        foreign key (sale_id) references sales (id)
+            on update cascade on delete cascade
+);
+
+create index item_id
+    on item_sales (item_id);
+
+create table login
+(
+    username varchar(45) not null
+        primary key,
+    password varchar(45) not null
+);
+
+
+create table payment
+(
+    id      varchar(15)    not null
+        primary key,
+    total   double         null,
+    c_id    varchar(15)    null,
+    item_id varchar(15)    null,
+    income  decimal(10, 2) null,
+    constraint payment_ibfk_1
+        foreign key (c_id) references customer (id)
+            on update cascade on delete cascade,
+    constraint payment_ibfk_2
+        foreign key (item_id) references item (id)
+            on update cascade on delete cascade
+);
+
+
+create table receptionist
+(
+    id             varchar(45) not null
+        primary key,
+    name           varchar(45) null,
+    contact_number varchar(45) null,
+    email          varchar(45) null
+);
+
+
+
+create table salary
+(
+    id     varchar(45) not null
+        primary key,
+    salary double      null
+);
+
+
+create table sales
+(
+    id     varchar(45)    not null
+        primary key,
+    amount int            null,
+    c_id   varchar(45)    null,
+    date   date           null,
+    income decimal(10, 2) null,
+    constraint sales_ibfk_1
+        foreign key (c_id) references customer (id)
+            on update cascade on delete cascade
+);
+
+create index c_id
+    on sales (c_id);
+
+create table stock
+(
+    id           varchar(45) not null
+        primary key,
+    stock_number varchar(45) null,
+    description  varchar(45) null
+);
+
+
